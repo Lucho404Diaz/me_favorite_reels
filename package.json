@@ -1,0 +1,16 @@
+{
+  "name": "me_favorite_reels",
+  "version": "1.0.0",
+  "description": "Project for download favorite reels ",
+  "main": "index.py",
+  "scripts": {
+    "venv:create": "python -m venv venv",
+    "venv:activate": "venv/bin/active",
+    "install:dependencies": "pip install -r config/requirements/develop.txt",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "pylint app -r n > pylint.txt || true",
+    "start": "python3 index.py"
+  },
+  "author": "luis404diaz",
+  "license": "ISC"
+}
