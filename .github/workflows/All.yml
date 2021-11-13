@@ -23,7 +23,7 @@ jobs:
           python3 -m venv venv
           echo ":: venv CREATED ::"
         fi
-        python3 -m pip instal -r config/requirements/develop.txt
+        python3 -m pip install -r config/requirements/develop.txt
     - name: 🕵️‍♀️🕵️‍♂️Analysing the code
       run: |
           pylint app -r n
