@@ -8,7 +8,7 @@
     "venv:activate": "venv/bin/activate",
     "install:dependencies": "pip3 install -r config/requirements/develop.txt",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "pylint app -r n > pylint.txt || true",
+    "lint": "pylint app -r n || true",
     "start": "python3 index.py"
   },
   "author": "Lucho404Diaz",

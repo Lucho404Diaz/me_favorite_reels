@@ -1,3 +1,6 @@
+"""
+Logging for application
+"""
 import logging
 
 
