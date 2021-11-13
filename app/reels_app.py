@@ -25,14 +25,14 @@ class ReelsApp:
 
     @staticmethod
     def download_reel():
-        name_reel = 'tren_superior[hombr_pecho_biceps]'
-        url_reel = 'https://www.instagram.com/tv/CNDE_mKITmC/'
+        name_reel = 'pythonTest'
+        url_reel = 'https://www.instagram.com/reel/CVVVm0OBFeA/'
         LOGGER.info('[download_reel] <Init Download reel > %s ', name_reel)
         headers_for_request = ReelsApp.generate_headers()
         LOGGER.info('[download_reel] <Headers for request:   %s >', headers_for_request)
         me_reel = Reel(url_reel)
         me_reel.scrape(headers=headers_for_request)
-        me_reel.download(fp=f"reels\\{name_reel}.mp4")
+        me_reel.download(fp=f"reels/{name_reel}.mp4")
         LOGGER.info('[download_reel] <FINISH PROCESS>')
 
 
