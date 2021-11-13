@@ -18,7 +18,7 @@ jobs:
         python-version: ${{ env.python_version }}
     - name: 🧱 Install dependencies
       run: |
-        export CURRENT_BRANCH=${{echo ${GITHUB_REF#refs/heads/})
+        export CURRENT_BRANCH=$(echo ${GITHUB_REF#refs/heads/})
         if [ ! -d "venv" ]; then
           python3 -m venv venv
         fi
