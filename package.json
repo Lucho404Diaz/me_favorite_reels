@@ -5,7 +5,7 @@
   "main": "index.py",
   "scripts": {
     "venv:create": "python3 -m venv venv",
-    "venv:activate": "venv/bin/activate",
+    "venv:activate": ". venv/bin/activate",
     "install:dependencies": "pip3 install -r config/requirements/develop.txt",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "pylint app -r n || true",
