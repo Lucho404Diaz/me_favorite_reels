@@ -18,11 +18,9 @@ jobs:
         python-version: ${{ env.python_version }}
     - name: 🧱 Install dependencies
       run: |
-        if [ ! -d "venv" ]; then
           python3 m venv venv
-        fi
-        . venv/bin/activate
-        python3 -m pip3 install -r config/requirements/develop.txt
+          . venv/bin/activate
+          python3 -m pip3 install -r config/requirements/develop.txt
     - name: Analysing the code with pylint
       run: |
-        pylint app -r n
+          pylint app -r n
