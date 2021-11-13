@@ -11,6 +11,6 @@
     "lint": "pylint app -r n > pylint.txt || true",
     "start": "python3 index.py"
   },
-  "author": "luis404diaz",
+  "author": "Lucho404Diaz",
   "license": "ISC"
 }
