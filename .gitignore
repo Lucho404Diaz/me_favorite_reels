@@ -4,3 +4,6 @@ venv
 .idea
 **/__pycache__
 *.pyc
+app/__pycache__/reels_app.cpython-310.pyc
+app/utils/__pycache__/loggin_util.cpython-310.pyc
+*.pyc
